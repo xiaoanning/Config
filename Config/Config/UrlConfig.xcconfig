@@ -1,0 +1,12 @@
+//
+//  UrlConfig.xcconfig
+//  Config
+//
+//  Created by 安宁 on 2017/4/28.
+//  Copyright © 2017年 安宁. All rights reserved.
+//
+
+WEBSERVICE_BASEURL = @"http:/\/127.0.0.1:8080"
+
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) WEBSERVICE_BASEURL='$(WEBSERVICE_BASEURL)'

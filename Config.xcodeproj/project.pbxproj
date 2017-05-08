@@ -13,6 +13,9 @@
 		4D337BD41EB2E0D40046FC87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BD21EB2E0D40046FC87 /* Main.storyboard */; };
 		4D337BD61EB2E0D40046FC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BD51EB2E0D40046FC87 /* Assets.xcassets */; };
 		4D337BD91EB2E0D40046FC87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BD71EB2E0D40046FC87 /* LaunchScreen.storyboard */; };
+		4D337BEA1EB2EAE90046FC87 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BE81EB2EAE90046FC87 /* Config.xcconfig */; };
+		4D337BEB1EB2EAE90046FC87 /* UrlConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BE91EB2EAE90046FC87 /* UrlConfig.xcconfig */; };
+		4D337BF41EB34AFC0046FC87 /* System.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D337BF31EB34AFC0046FC87 /* System.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		4D337BD51EB2E0D40046FC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D337BD81EB2E0D40046FC87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D337BDA1EB2E0D40046FC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D337BE31EB2E3380046FC87 /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		4D337BE81EB2EAE90046FC87 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4D337BE91EB2EAE90046FC87 /* UrlConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UrlConfig.xcconfig; sourceTree = "<group>"; };
+		4D337BF31EB34AFC0046FC87 /* System.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = System.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,7 @@
 				4D337BD71EB2E0D40046FC87 /* LaunchScreen.storyboard */,
 				4D337BDA1EB2E0D40046FC87 /* Info.plist */,
 				4D337BC91EB2E0D40046FC87 /* Supporting Files */,
+				4D337BE31EB2E3380046FC87 /* Note.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -74,9 +82,20 @@
 		4D337BC91EB2E0D40046FC87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D337BE71EB2EAE90046FC87 /* Config */,
 				4D337BCA1EB2E0D40046FC87 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D337BE71EB2EAE90046FC87 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4D337BE81EB2EAE90046FC87 /* Config.xcconfig */,
+				4D337BE91EB2EAE90046FC87 /* UrlConfig.xcconfig */,
+				4D337BF31EB34AFC0046FC87 /* System.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +129,7 @@
 				TargetAttributes = {
 					4D337BC51EB2E0D40046FC87 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8429SBRZW5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D337BEA1EB2EAE90046FC87 /* Config.xcconfig in Resources */,
 				4D337BD91EB2E0D40046FC87 /* LaunchScreen.storyboard in Resources */,
 				4D337BD61EB2E0D40046FC87 /* Assets.xcassets in Resources */,
+				4D337BF41EB34AFC0046FC87 /* System.xcconfig in Resources */,
 				4D337BD41EB2E0D40046FC87 /* Main.storyboard in Resources */,
+				4D337BEB1EB2EAE90046FC87 /* UrlConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +203,7 @@
 /* Begin XCBuildConfiguration section */
 		4D337BDB1EB2E0D40046FC87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D337BE81EB2EAE90046FC87 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -229,6 +253,7 @@
 		};
 		4D337BDC1EB2E0D40046FC87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D337BE81EB2EAE90046FC87 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -273,22 +298,34 @@
 		4D337BDE1EB2E0D40046FC87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaotuan_xt@163.com (4N6H4PQ2YK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anning.Config;
+				PRODUCT_BUNDLE_IDENTIFIER = anning.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		4D337BDF1EB2E0D40046FC87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaotuan_xt@163.com (4N6H4PQ2YK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = anning.Config;
+				PRODUCT_BUNDLE_IDENTIFIER = anning.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -311,6 +348,7 @@
 				4D337BDF1EB2E0D40046FC87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
